@@ -23,6 +23,12 @@
 
     <section id="home">
         <div class="banner">
+            <h2>Chess Home</h2>
+            <p>Chess, a game of remarkable depth and history, boasts intriguing facts that add layers to its allure. With over 288
+            billion possible ways to play the first four moves per side, the complexity of the game is staggering. The longest
+            recorded game, lasting 269 moves and over 20 hours, ended in a draw. Notably, the queen, once limited to moving one
+            square at a time, gained its formidable powers in the 15th century. The knight stands as the sole piece capable of
+            jumping over others on the board..</p>
             <img src="chess-banner.jpg" alt="Chess Banner">
         </div>
     </section>
@@ -47,7 +53,22 @@
                 <td>Queen</td>
                 <td>Any number of squares in any direction</td>
             </tr>
-            <!-- Add more rows for other chess pieces -->
+            <tr>
+                <td>Rook</td>
+                <td>Any number of squares horizontally or vertically</td>
+            </tr>
+            <tr>
+                <td>Bishop</td>
+                <td>Any number of of squares diagonally</td>
+            </tr>
+            <tr>
+                <td>Knight</td>
+                <td>In an "L" shape: two squares in one direction and then one square perpendicular</td>
+            </tr>
+            <tr>
+                <td>Pawn</td>
+                <td>Forward one square but captures diagonally. On its first move, a pawn has the option to move forward two squares</td>
+            </tr>
         </table>
     </section>
 
@@ -59,14 +80,36 @@
     </section>
 
     <section id="quiz">
-        <h2>Chess Quiz</h2>
+        <h2>Chess Quiz 1</h2>
         <div class="quiz-container">
             <p>How many squares are there on a standard chessboard?</p>
-            <form id="chessQuizForm">
+            <form id="chessQuiz1Form">
                 <input type="text" id="quizAnswer" placeholder="Enter your answer">
-                <button type="button" onclick="checkChessAnswer()">Submit</button>
+                <button type="button" onclick="checkChessAnswer1()">Submit</button>
             </form>
             <p id="quizResult"></p>
+        </div>
+    </section>
+    <section id="quiz">
+        <h2>chess Quiz 2</h2>
+        <div class="quiz-container">
+            <p>How many pieces does chess have?</p>
+            <form id="chessQuiz2Form">
+                <input type="text" id="quizAnswer2" placeholder="Enter your answer">
+                <button type="button" onclick="checkChessAnswer2()">Submit</button>
+            </form>
+            <p id="quizResult2"></p>
+        </div>
+    </section>
+    <section id="quiz">
+        <h2>Chess Quiz 3</h2>
+        <div class="quiz-container">
+            <p>Which of the following is the only piece that can capture other pieces while moving vertically?</p>
+            <form id="chessQuiz3Form">
+                <input type="text" id="quizAnswer3" placeholder="Enter your answer">
+                <button type="button" onclick="checkChessAnswer3()">Submit</button>
+            </form>
+            <p id="quizResult3"></p>
         </div>
     </section>
     <section id="contact">
@@ -91,5 +134,3 @@
 
     <script src="function.js"></script>
 </body>
-
-</html>
