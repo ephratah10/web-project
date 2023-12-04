@@ -2,6 +2,11 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    /* Set your desired background color */
+    color: #333;
+    /* Set your desired text color */
 }
 
 header {
@@ -10,24 +15,23 @@ header {
     padding: 10px;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-nav a {
-    text-decoration: none;
+header nav ul li a {
     color: #fff;
+    text-decoration: none;
 }
 
-.banner img {
-    width: 100%;
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 section {
@@ -57,7 +61,7 @@ table {
 table,
 th,
 td {
-    border: 1px solid #333;
+    border: 1px solid #ccc;
 }
 
 th,
@@ -66,18 +70,55 @@ td {
     text-align: left;
 }
 
+.quiz-container {
+    margin-top: 20px;
+}
+
+#quizResult,
+#quizResult2,
+#quizResult3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contactForm button:hover {
+    background-color: #555;
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-}
-
-.quiz-container {
-    margin-top: 20px;
-}
-
-#quizResult {
-    margin-top: 10px;
-    font-weight: bold;
 }
